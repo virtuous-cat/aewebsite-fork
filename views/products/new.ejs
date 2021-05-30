@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+</head>
+<body>
+    <form action="/products" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="product[name]">
+        </div>
+        <div>
+            <label for="colour">Colour:</label>
+            <input type="text" id="colour" name="product[colour]">
+        </div>
+        <div>
+            <label for="qty">Qty:</label>
+            <input type="number" id="qty" name="product[qty]">
+        </div>
+        <!-- <div>
+            <label for=""></label>
+            <input type="text" id="" name="product[]">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="text" id="" name="product[]">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="text" id="" name="product[]">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="text" id="" name="product[]">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="text" id="" name="product[]">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="text" id="" name="product[]">
+        </div> -->
+        <button class="btn">Add Product</button>
+    </form>
+    <a href="/products">Back to All Products</a>
+</body>
+</html>

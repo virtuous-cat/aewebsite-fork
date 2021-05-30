@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= product.name %> - <%= product.colour %></title>
+</head>
+<body>
+    <h1><%= product.name %></h1>
+    <h2>Colour: <%= product.colour %></h2>
+    <p>Qty: <%= product.qty %> </p>
+    <p><a href="/products/<%= product.id %>/edit">Edit</a><form action="/products/<%= product.id %>?_method=DELETE" method="POST"><button>Delete</button></form></p>
+    <a href="/products">Back to All Products</a>
+</body>
+</html>
