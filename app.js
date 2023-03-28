@@ -103,7 +103,7 @@ app.all("*", (req, res, next) => {
 
 app.use((err, req, res, next) => {
   const { statusCode = 500 } = err;
-  if (!err.message) err.message = message = "Something went wrong";
+  if (!err.message) err.message = message = "Server Error";
   res.status(statusCode).render("error", { err });
 });
 
